@@ -199,6 +199,9 @@ body::before{
     color:rgb(77, 71, 71);
     opacity: 1;
 }
+.up{
+    display: none;
+}
 
 .titulo_skills{
     width: 100%;
@@ -358,7 +361,7 @@ body::before{
     justify-content: center;
 }
 .conctat{
-    width: 100%;
+    width: 100vw;
     height: 30rem;
     background-color: white;
     display: flex;

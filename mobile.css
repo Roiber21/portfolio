@@ -8,17 +8,19 @@
         background-attachment: fixed;
         margin: 0;
         height: 220rem;
+      width: 0;
    
        
       
         
         
     }
+    
     body::before{
         content: "";
        background: rgb(114, 231, 173);
        position: absolute;
-       width: 48rem;
+       width: 100vw;
        height: 220rem;
        left: 0;
        top: 0;
@@ -35,7 +37,8 @@
         justify-content: center;
         height: 50rem;
         padding: 6rem;
-        width: 48rem;
+        width: 100vw;
+        z-index: 12;
         
     
        
@@ -54,7 +57,7 @@
         height: 20rem;
     }
     .navbar{
-        width: 100%;
+        width: 100vw;
         height: 5rem;
         background: rgba(0,0,0,0.8);
         background-image: initial;
@@ -79,10 +82,10 @@
         justify-content: center;
         position: relative;
         background-color: rgb(214, 214, 214);
-        left: 100%;
+        display: none;
         padding: 0;
         top: 1rem;
-        width: 100%;
+        width: 100vw;
         align-items: center;
         margin: 0;
         height: 60vh;
@@ -142,13 +145,14 @@
     .menu_visible{
         left: 0;
         transition: 0.4s;
+        display: flex;
     }
     .foto_perfil{
         height: 15rem;
         width: 15rem;
         position: relative;
         bottom: 12rem;
-        left: 9rem;
+        left: 6rem;
     
       
     }
@@ -194,10 +198,11 @@
         opacity: 1;
     }
     
+    
     .titulo_skills{
         width: 100%;
         height: 6rem;
-      left: 4.6rem;
+      left: 20rem;
       position: relative;
         display: flex;
         justify-content: center;
@@ -213,9 +218,11 @@
         min-height: 30rem;
         flex-wrap: wrap;
         max-height: 100rem;
-        width: 48rem;
+        width: 100vw;
         border-radius: 0;
         overflow-x: scroll;
+        position: relative;
+        z-index: 2;
 
        
         
@@ -243,7 +250,10 @@
     .about_me{
         width: 100%;
         height: 45rem;
+        padding: 2rem;
+        position: relative;
     }
+    
     .cohete{
         display: none;
        
@@ -254,20 +264,45 @@
     .icon_follow_me{
         display: none;
     }
-    
-    .conctat{
-        width: 48rem;
-        height: 40rem;
+ .up{
+     position:fixed;
+     left: 32rem;
+     width: 5rem;
+     height: 5rem;
+     top: 57rem;
+     z-index: 0;
+     display: flex;
+     
+ }
+    .container_contact{
         background-color: white;
-        position: relative;
-      display: flex;
-     margin: auto;
-     left: 1rem;
-     border-radius: 5rem;
-        
+        width: 36.4rem;
+        height: 35rem;
+        margin: auto;
+     
+        border-radius: 5rem;
     }
+    #contact_me{
+      background-color: transparent;
+    }
+    .contact_items a{
+        text-decoration: none;
+        color:white;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        line-height: 0.1rem;
+    
+    }
+    .contact_{
+        display: inline-block;
+        position: relative;
+        right: 4rem;
+        bottom: 3rem;
+    }
+
     .about_me{
-        width: 100%;
+        width: 100vw;
         height: 40rem;
         font-family: 'Source Sans Pro', sans-serif;
         display: flex;
@@ -346,7 +381,7 @@
         justify-content: center;
     }
     .conctat{
-        width: 46rem;
+        width: 100vw;
         height: 40rem;
         background-color: white;
         position: relative;
