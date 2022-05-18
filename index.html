@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./animate.min.css">
+    <link rel="stylesheet" href="./animate.css">
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <link rel="stylesheet" media="(max-width: 768px)" href="./mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,23 +33,23 @@
                 <li class="nav_items"> <a href="">Home</a></li>
                 <li class="nav_items"> <a href="#about_me">About me</a></li>
                 <li class="nav_items"> <a href="#skills">Skills</a></li>
-                <li class="nav_items"> <a href="">Projects</a></li>
+                <li class="nav_items"> <a href="#Projets">Projects</a></li>
                 <li class="nav_items"> <a href="#contact_me">Contact me</a></li>
-                <li class="nav_items"> <img class="flag" src="/icons/estados-unidos.png" alt=""> 
+                <li class="nav_items"> <img class="flag" src="/icons/estados-unidos.png" alt="bandera USA"> 
                     <a href=""></a></li>
-                <li class="nav_items"> <a href="/portafolio_es.html" ><img class="flag" src="/icons/spain.png" alt=""></a>
+                <li class="nav_items"> <a href="/portafolio_es.html" ><img class="flag" src="/icons/spain.png" alt="bandera de españa"></a>
                     <a href="/portafolio_es.html">Spanish</a></li>
             </ul>
 
         </nav>
     </header>
-   <section id="home" class="container">
+   <section id="home" class="container wow animate__fadeInDown">
        <div class="card">
            <div class="foto_portada">
-               <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+               <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto de portada">
            </div>
            <div class="foto_perfil">
-               <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFgU3WfoWeOoA/profile-displayphoto-shrink_200_200/0/1646711315008?e=1652313600&v=beta&t=YtW1kTnajoCUVXvnP8Mc4E0iKIt_qRnSt90lICuq0wM" alt="">
+               <img src="/icons/perfil.jpg" alt="foto de perfil">
            </div>
           
            <p class="presentacion_titulo"> Hi! i am Roiber Figueroa <br>
@@ -74,46 +81,46 @@
        </div>
    </section >
    <h1 id="skills" class="titulo_skills">Skills</h1>
-   <section class="skills">
+   <section class="skills wow animate__fadeInDownBig">
        <div class="container1">
            <p >Html</p>
-           <img src="https://cdn-icons-png.flaticon.com/512/6840/6840495.png"/>
+           <img alt="html" src="https://cdn-icons-png.flaticon.com/512/6840/6840495.png"/>
            
        </div>
        <div class="container2">
            <p>Css</p>
-           <img src="https://cdn-icons-png.flaticon.com/512/6840/6840466.png"/>
+           <img alt="css" src="https://cdn-icons-png.flaticon.com/512/6840/6840466.png"/>
 
        </div>
        <div class="container3">
         <p>Javascript</p>
-        <img src="https://cdn-icons-png.flaticon.com/512/6840/6840514.png"/>
+        <img alt="javascript" src="https://cdn-icons-png.flaticon.com/512/6840/6840514.png"/>
 
        </div>
        <div class="container4">
         <p>Git</p>
-        <img src="/icons/commit-git.png"/>
+        <img alt="git" src="/icons/commit-git.png"/>
 
        </div>
        <div class="container5">
         <p>React</p>
-        <img src="/icons/react.png"/>
+        <img alt="react" src="/icons/react.png"/>
 
        </div>
        </div>
        <div class="container5">
         <p>Github</p>
-        <img src="https://cdn-icons-png.flaticon.com/512/1322/1322053.png"/>
+        <img alt="github" src="https://cdn-icons-png.flaticon.com/512/1322/1322053.png"/>
 
        </div>
 
    </section>
        
-   <main id="about_me" class="about_me">
+   <main id="about_me" class="about_me wow animate__fadeIn">
        <h1 class="me">Who am I?</h1>
-       <img class="saludo" src="/icons/hello.png" alt="">
-        <img class="cohete" src="https://cdn-icons-png.flaticon.com/512/6985/6985699.png" alt="">
-        <div class="me_info">
+       <img class="saludo" src="/icons/hello.png" alt="saludo">
+        <img class="cohete" src="https://cdn-icons-png.flaticon.com/512/6985/6985699.png" alt="cohete">
+        <div class="me_info wow animate__slideInDown">
             <div class="about_me_titulo">
                 <h2>About me</h2>
             </div>
@@ -147,18 +154,59 @@
                
                 </div>
         </div>
-  <img class="icon_follow_me" src="https://cdn-icons-png.flaticon.com/512/4951/4951208.png" alt="">
+  <img class="icon_follow_me" src="https://cdn-icons-png.flaticon.com/512/4951/4951208.png" alt="icono seguir en redes">
 
 
 
           </main>
+          <section id="Projets" class="proyects wow animate__bounce" >
+               <div class="container_proyects wow animate__fadeIn" >
+                   <div class="card_proyect " >
+                       <figure class="imagen_proyect" >
+                           <img class="imagen_petgram" src="/icons/petgram-app.jpg" alt="foto del Proyecto">
+                       </figure>
+                       <h1 class="titulo_proyect" >petgram-App</h1>
+
+                       <div class="botones" >
+                        <button type="button" class="boton_card" ><a class="boton_link" href="https://petgram-roiber.vercel.app/">Demo</a></button></button>
+                         <button type="button" class="boton_card" > <a class="boton_link" href="https://github.com/Roiber21/Petgram-app">Github</a></button>
+                   </div>
+
+
+
+                   </div>
+                   <div class="card_proyect" >
+                    <figure class="imagen_proyect" >
+                        <img  src="/icons/ecomerce.jpg" alt="foto del Proyecto">
+                    </figure>
+                    <h1 class="titulo_proyect" >E-commerce-Yard-sale</h1>
+
+                    <div class="botones" >
+                        <button type="button" class="boton_card" ><a class="boton_link" href="https://roiber21.github.io/e-commerce--Yard-sale/">Demo</a></button></button>
+                         <button type="button" class="boton_card" > <a class="boton_link" href="https://github.com/Roiber21/e-commerce--Yard-sale">Github</a></button>
+                   </div>
+                   </div>
+                   <div class="card_proyect" >
+                    <figure class="imagen_proyect" >
+                        <img src="/icons/platzi-merch.jpg" alt="foto del Proyecto">
+                    </figure>
+                    <h1 class="titulo_proyect" >Merch-platzi</h1>
+
+                    <div class="botones" >
+                      <button type="button" class="boton_card" ><a class="boton_link" href="https://platzi-merch-c10d4.web.app/">Demo</a></button></button>
+                       <button type="button" class="boton_card" > <a class="boton_link" href="https://github.com/Roiber21/merch-platzi">Github</a></button>
+                 </div>
+                 
+
+              
+          </section>
       </section>
      <a href="#home">
          <img class="up" src="/icons/chevron-flecha-hacia-arriba.png" alt="">
      </a>   
 
    </div>
-    <section id="contact_me" class="conctat">
+    <section id="contact_me" class="conctat wow animate__fadeInDown ">
         <div class="container_contact">
             <h1 class="titulo_contact">Contact me</h1>
                <ul class="contact_" >
@@ -173,7 +221,7 @@
                        <a href="https://www.linkedin.com/in/roiber-figueroa-6275391ba/">Linkedin</a>
                    </li>
                </ul>
-
+               
         </div>
        </section>
   
