@@ -452,3 +452,16 @@
 .card_proyect{
  margin: 3rem;
 }
+.boton_cv{
+    background-color: transparent;
+    border: white 1px solid;
+    width: 15rem;
+    height: 3rem;
+    position: relative;
+    top: .1rem;
+    left: 4rem;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+    border-radius: 3rem;
+}

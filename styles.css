@@ -561,3 +561,22 @@ body::before{
     font-family: sans-serif;
     text-align: center;
 }
+.boton_cv{
+    background-color: transparent;
+    border: white 1px solid;
+    width: 20rem;
+    height: 3rem;
+    position: relative;
+    bottom: 2rem;
+    border-radius: 3rem;
+}
+.boton_cv:hover{
+    background-color: rgba(151, 45, 221, 0.9);
+    border: none;
+}
+.a_cv{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
