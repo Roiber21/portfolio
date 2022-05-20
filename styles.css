@@ -497,6 +497,8 @@ body::before{
     display: grid;   
     margin: auto;
     display: inline-flex;
+  
+    
     
   
 }
