@@ -455,13 +455,13 @@
 .boton_cv{
     background-color: transparent;
     border: white 1px solid;
-    width: 15rem;
+    width: 51%;
     height: 3rem;
     position: relative;
     top: .1rem;
     left: 4rem;
-  display: inline;
+  display:inline-flex;
   justify-content: center;
-  align-items: center;
+   align-items: center;
     border-radius: 3rem;
 }
