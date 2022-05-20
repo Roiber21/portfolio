@@ -87,7 +87,7 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(228, 224, 224);
         display: none;
         padding: 0;
         top: 1rem;
@@ -190,7 +190,7 @@
         display: inline-block;
         position: relative;
         left:2rem;
-        bottom: 9rem;
+        bottom: 9.5rem;
         margin: auto;
         
         
